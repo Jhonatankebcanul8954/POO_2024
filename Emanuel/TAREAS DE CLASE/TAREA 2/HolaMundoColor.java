@@ -4,7 +4,7 @@ public class HolaMundoColor {
     private int tamañoLetra;
 
     public HolaMundoColor(String color, String texto, int size) {
-        this.color = color != null ? color : "blanco"; // Si color es nulo, se establece en "blanco"
+        setColor(color);
         this.texto = texto != null ? texto : "¡Hola Mundo!"; // Si texto es nulo, se establece en "¡Hola Mundo!"
         this.tamañoLetra = size > 0 ? size : 14; // Si size es mayor que 0, se establece en size, de lo contrario se establece en 14
     }
