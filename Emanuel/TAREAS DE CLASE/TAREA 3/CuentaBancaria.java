@@ -5,10 +5,10 @@ public class CuentaBancaria {
     private String tipo;
 
     public CuentaBancaria(String numCuenta, String nombreTitular, double saldo, String tipo) {
-        this.numCuenta = numCuenta;
-        this.nombreTitular = nombreTitular;
-        this.saldo = saldo;
-        this.tipo = (tipo != " ") ? tipo : "Debidto";
+        setNumCuenta(numCuenta);
+        setNombreTitular(nombreTitular);
+        setSaldo(saldo);
+        setTipo(tipo);
     }
 
     public String getNumCuenta() {
